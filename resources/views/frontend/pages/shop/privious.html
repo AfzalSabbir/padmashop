@@ -1,0 +1,22 @@
+@foreach($products as $product)
+<div class="product_item is_new">
+    <div class="product_border"></div>
+    <div class="product_image d-flex flex-column align-items-center justify-content-center">
+        @php
+        $images = json_decode($product->image)
+        @endphp
+        <img src="{{ asset($images[0]) }}" alt="">
+    </div>
+    <div class="product_content">
+        <div class="product_price">{{ $product->regular_price - (($product->regular_price * $product->discount) / 100).' TK' }}</div>
+        <div class="product_name"><div><a href="#" tabindex="0">{{ $product->title }}</a></div></div>
+    </div>
+    {{-- <div class="product_fav"><i class="fas fa-heart"></i></div> --}}
+    <ul class="product_marks">
+        <li class="product_mark product_discount">{{ $product->discount }}</li>
+    </ul>
+    <div>
+        {{-- <add-to-cart :hover_product="0" :product="{{ json_encode($product) }}"></add-to-cart> --}}
+    </div>
+</div>
+@endforeach

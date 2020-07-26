@@ -1,0 +1,54 @@
+*, *:after, *:before {padding: 0; margin: 0;}
+
+.matarial_form {
+	max-width: 960px;
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+	font-family: 'Heebo', sans-serif;
+}
+.matarial_form .form_blog {
+	width: 100%;
+	display: block;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.matarial_form .form_row {
+	position: relative;
+	overflow: hidden;
+	padding-top: 15px;
+}
+.matarial_form .form_row .form_input {
+	display: block;
+	width: 96.5%;
+	margin: 10px 0;
+	font-size: 18px;
+	padding: 0 15px;
+	line-height: 35px;
+	border-radius: 4px;
+	border: 2px solid #BDBDBD;
+	background-color: rgba(0, 0, 0, 0)
+}
+.matarial_form .form_row .form_input:focus {border: 2px solid #009688 !important;}
+.matarial_form .form_row .form_input:required {border-left: 2px solid #ff1744 !important;}
+.matarial_form .form_row label {
+	position: absolute;
+	font-size: 18px;
+	top: 32px;
+	left: 15px;
+	color: #BDBDBD;
+	transition: all 0.3s ease-in-out;
+	z-index: -1;
+}
+.matarial_form .form_row label.text_none {top: 0;font-size: 15px;color: #009688;}
+.matarial_form .submit, .matarial_form .reset {
+	border: 1px solid transparent;
+	padding: 10px 25px;
+	float: right;
+	margin: 15px 0;
+	font-weight: 700;
+	font-size: 18px;
+}
+.matarial_form .submit {background: #388E3C;color: #fff;}
+.matarial_form .reset {margin-right: 15px;background: #e53935;color: #fff;}
+.matarial_form .submit:focus, .matarial_form .reset:focus {box-shadow: 0px 1px 8px 1px #37474F;}

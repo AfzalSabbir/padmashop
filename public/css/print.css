@@ -1,0 +1,7 @@
+h3#hide {
+    display: none;
+}
+@media print {
+    /* All your print styles go here */
+
+}
