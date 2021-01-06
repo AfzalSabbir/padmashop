@@ -11,7 +11,7 @@
         "wp": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --watch --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bootstrap": "^4.5.0",
         "jquery": "^3.5.1",
         "laravel-mix": "^4.1.4",
